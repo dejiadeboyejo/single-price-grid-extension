@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="test.css">
+  <script defer src="./index.js"></script>
+  <title>Sign Up Page</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="signup-box">
+                <h1>Sign Up</h1>
+                <h4>Join our community!</h4>
+            </div>
+            <div class="details">
+                <form id="form" action="/">
+                    <div class="input-control">
+                    <label for="firstname">First Name</label>
+                    <input id="firstname" name="first-name" type="text"/>
+                    <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                    <label for="lastname">Last Name</label>
+                    <input id="lastname" name="last-name" type="text"/>
+                    <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text"/>
+                    <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                    <label for="password">Password</label>
+                    <input id="password" type="password"/>
+                    <div class="error"></div>
+                    </div>
+                    <div class="select">
+                        <select name="format" id="format">
+                           <option selected disabled>Subscription Plan</option>
+                           <option value="month">Monthly Plan</option>
+                           <option value="year">Yearly plan</option>
+                        </select>
+                    </div>
+                    <a href="" class="button" type="submit">Submit</a>
+                </form>
+                <p>
+                  By clicking the Sign Up button,you agree to our <br />
+                  <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+            </p>
+            </div>
+               
+        </div>
+    </section>
+  
+    <p class="user">
+        Already have an account? <a href="login.html">Login here</a>
+      </p>
+</body>
+</html>

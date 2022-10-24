@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: 'karla', sans-serif;
+}
+
+section {
+	min-height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--light-gray);
+	padding: 5px;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 100%; }
+
+.signup-box {
+    width: 360px;
+    height: 115px;
+    margin: auto;
+    background-color: var(--cyan);
+    border-radius: 3px 3px 0px 0px;
+}
+
+.details {
+    width: 360px;
+    height: 530px;
+    margin: auto;
+    background-color: white;
+    border-radius: 0px 0px 3px 3px;
+    padding-top: 5px;
+}
+  
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding-top: 5px;
+}
+  
+h4 {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+  
+form {
+    width: 300px;
+    margin-left: 20px;
+}
+  
+form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 17px;
+}
+  
+form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+
+.input-control.sucess input {
+    border-color: hsl(154, 91%, 40%);
+}
+
+.input-control.error input {
+    border-color: hsl(348, 100%, 61%);
+}
+
+input.input-control.errror {
+    color: hsl(348, 100%, 61%);
+    font-size: 9px;
+    height: 13px;
+}
+
+.button {
+	text-align: center;
+	width: 100%;
+	padding: 7px;
+    border: 3px solid var(--bright-yellow);
+	border-radius: 8px;
+	display: inline-block;
+	background-color: var(--bright-yellow);
+	color: white;
+	text-decoration: none;
+	font-size: 1.2rem;
+	margin-top: 30px;
+	font-weight: 700;
+	box-shadow: 0px 4px 10px 1px #00000033;
+	cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: white;
+    color: var(--cyan);
+}
+
+p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+    color: black;
+}
+
+.user {
+    margin-top: -10px;
+}
+
+.select {
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    height: 20px;
+    line-height: 10;
+    overflow: hidden;
+    border-radius: 3px;
+    padding-top: 30px;
+    margin: auto;
+ }
+

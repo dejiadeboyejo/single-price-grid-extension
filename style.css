@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+html {
+	font-size: 16px;
+	font-family: 'karla', sans-serif; 
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+section {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--light-gray);
+	padding: 100px 30px;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 100%;
+	max-width: 550px;
+	margin: 0 auto;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0px 0px 14px 1px #00000024;
+}
+
+.objects {
+	padding: 30px;
+}
+
+.first-object {
+	background-color: white;
+}
+.first-object h2 {
+	color: var(--cyan);
+	font-weight: 700;
+	font-size: 1.3rem;
+	margin-bottom: 15px;
+}
+
+.first-object h3 {
+	color: var(--bright-yellow);
+	font-size: 1rem;
+	margin-bottom: 15px;
+}
+
+.first-object p {
+	color: var(--grayish-blue);
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.second-object {
+	background-color: var(--cyan);
+}
+
+.second-object h3 {
+	color: white;
+	font-weight: 400;
+	font-size: 1.rem;
+	margin-bottom: 15px;
+}
+
+.second-object p {
+	color: var(--light-gray);
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.second-object p span {
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+
+.button {
+	text-align: center;
+	width: 100%;
+	padding: 15px;
+	border-radius: 8px;
+	display: inline-block;
+	background-color: var(--bright-yellow);
+	color: white;
+	text-decoration: none;
+	font-size: 1.2rem;
+	margin-top: 30px;
+	font-weight: 700;
+	box-shadow: 0px 4px 10px 1px #00000033;
+	cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.button:hover {
+    background-color: white;
+    color: var(--cyan);
+}
+
+.third-object {
+	background-color: var(--cyan);
+}
+
+.third-object h3 {
+	color: white;
+	font-weight: 400;
+	font-size: 1.3rem;
+	margin-bottom: 15px;
+}
+
+.third-object p {
+	color: var(--light-gray);
+	line-height: 1.5rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width: 768px) {
+	.container {
+		grid-template-columns: 1fr 1fr;
+	}
+	.container .first-object {
+		grid-area: 1 / 1 / 2 / 3;
+	}
+	.container .second-object,
+	.container .third-object {
+		grid-row: 2;
+	}
+}
